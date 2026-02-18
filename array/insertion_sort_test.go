@@ -1,0 +1,30 @@
+package array
+
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
+
+type InsertionSortInputTests struct {
+	input    []int
+	expected []int
+}
+
+func TestInsertionSort(t *testing.T) {
+	assert := assert.New(t)
+
+	tests := []InsertionSortInputTests{
+		{[]int{}, []int{}},
+		{[]int{1}, []int{1}},
+		{[]int{0, 1}, []int{0, 1}},
+		{[]int{1, 0}, []int{0, 1}},
+		{[]int{5, 1}, []int{1, 5}},
+		{[]int{100, 40, 9, 20, 11}, []int{9, 11, 20, 40, 100}},
+	}
+
+	for _, currentTest := range tests {
+		InsertionSort(currentTest.input)
+		assert.Equal(currentTest.expected, currentTest.input, "Failed: expected %d but got %d", currentTest.expected, currentTest.input)
+	}
+}

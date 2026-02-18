@@ -9,3 +9,6 @@ I created this project with the goal of storing the code for each data structure
 * Arrays
   * [Bubble Sort](./array/bubble_sort_test.go)
   * [Selection Sort](./array/selection_sort_test.go)
+  * [Insertion Sort](./array/insertion_sort_test.go)
+  * [Shell Sort](./array/shell_sort_test.go)
+  
