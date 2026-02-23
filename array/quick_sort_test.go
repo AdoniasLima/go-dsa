@@ -24,7 +24,7 @@ func TestQuickSort(t *testing.T) {
 	}
 
 	for _, currentTest := range tests {
-		QuickSort(currentTest.input)
-		assert.Equal(currentTest.expected, currentTest.input, "Failed: expected %d but got %d", currentTest.expected, currentTest.input)
+		result := QuickSort(currentTest.input)
+		assert.Equal(currentTest.expected, result, "Failed: expected %d but got %d", currentTest.expected, result)
 	}
 }
