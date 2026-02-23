@@ -11,4 +11,5 @@ I created this project with the goal of storing the code for each data structure
   * [Selection Sort](./array/selection_sort_test.go)
   * [Insertion Sort](./array/insertion_sort_test.go)
   * [Shell Sort](./array/shell_sort_test.go)
-  
+  * [Merge Sort](./array/merge_sort_test.go)
+  * [Quick Sort](./array/quick_sort_test.go)
